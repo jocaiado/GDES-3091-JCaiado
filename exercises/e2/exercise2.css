@@ -41,7 +41,6 @@ p{
 /*denmark*/
 .grid-dk {
 	display: grid;
-	border: 1px solid #c7c7c7;
 	width: 425px;
 	height: 350px;
 	grid-template: 6fr 2fr 6fr/6fr 2fr 9fr;
@@ -82,7 +81,6 @@ p{
 /*iceland*/
 .grid-is {
 	display: grid;
-	border: 1px solid #c7c7c7;
 	width: 500px;
 	height: 320px;
 	grid-template: 7fr 1fr 2fr 1fr 7fr/7fr 1fr 2fr 1fr 14fr;
@@ -107,8 +105,6 @@ p{
 /*my own flag, inspired by princess peach from mario*/
 .box {
 	position: relative;
-/*	margin:  auto;*/
-	border: 1px solid #c7c7c7;
 	width: 480px;
 	height: 300px;
 }
