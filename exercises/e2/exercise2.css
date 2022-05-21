@@ -1,0 +1,151 @@
+/* exercise 2 test CSS */
+
+h1 {
+	font-family: Helvetica;
+	margin-top: -2px;
+}
+
+h2 {
+	font-family: Helvetica;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: -1px;
+}
+
+p{ 
+	font-family: Garamond;
+	margin-top: -15px;
+}
+
+.grid-se {
+	display: grid;
+	/*outline: 1px solid black;*/
+	width: 480px;
+	height: 300px;
+	grid-template: 40% 20% 40%/31.25% 12.5% 56.25%;
+}
+
+.se-yellow {
+	background: #fecc00;
+}
+
+.se-blue {
+	background: #006aa7;
+}
+
+.se-text {
+	color: #006aa7;
+}
+
+.grid-dk {
+	display: grid;
+	border: 1px solid #c7c7c7;
+	width: 425px;
+	height: 350px;
+	grid-template: 6fr 2fr 6fr/6fr 2fr 9fr;
+}
+.dk-red {
+	background: #c9072a;
+}
+
+.dk-white {
+	background: #ffffff;
+}
+
+.dk-text {
+	color: #c9072a;
+}
+
+.grid-fi {
+	display: grid;
+	border: 1px solid #c7c7c7;
+	width: 450px;
+	height: 325px;
+	grid-template: 5fr 3fr 5fr/5fr 3fr 10fr;
+}
+
+.fi-white {
+	background: #ffffff;
+}
+
+.fi-blue {
+	background: #005d97;
+}
+
+.fi-text {
+	color: #65696c;
+}
+
+.grid-is {
+	display: grid;
+	border: 1px solid #c7c7c7;
+	width: 500px;
+	height: 320px;
+	grid-template: 7fr 1fr 2fr 1fr 7fr/7fr 1fr 2fr 1fr 14fr;
+}
+
+.is-blue {
+	background: #02529c;
+}
+
+.is-white {
+	background: #ffffff;
+}
+
+.is-red {
+	background: #dc1e35;
+}
+
+.is-text {
+	color: #02529c;
+}
+
+.box {
+	position: relative;
+/*	margin:  auto;*/
+	border: 1px solid #c7c7c7;
+	width: 480px;
+	height: 300px;
+}
+
+.stripes {
+	display: grid;
+	position: absolute;
+/*	border: 1px solid black;*/
+	width: 480px;
+	height: 300px;
+	grid-template: repeat(5, 60px)/ 1fr;
+	z-index: -2;
+}
+
+.stripes-child {
+	background: #4077a8;
+}
+
+.stripes-child:nth-child(even) {
+	background: #ffffff;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 150px solid transparent;
+	border-left: 250px solid #ff94b9;
+	border-bottom: 150px solid transparent;
+	z-index:-1 ;
+}
+
+.triangle2 {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 140px solid transparent;
+	border-left: 225px solid #dc4f75;
+	border-bottom: 140px solid transparent;
+	top: 10px;
+}
+
+.peach {
+	color: #dc4f75;
+}
