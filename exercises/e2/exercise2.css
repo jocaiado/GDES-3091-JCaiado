@@ -17,6 +17,7 @@ p{
 	margin-top: -15px;
 }
 
+/*sweden*/
 .grid-se {
 	display: grid;
 	/*outline: 1px solid black;*/
@@ -37,6 +38,7 @@ p{
 	color: #006aa7;
 }
 
+/*denmark*/
 .grid-dk {
 	display: grid;
 	border: 1px solid #c7c7c7;
@@ -56,6 +58,7 @@ p{
 	color: #c9072a;
 }
 
+/*finland*/
 .grid-fi {
 	display: grid;
 	border: 1px solid #c7c7c7;
@@ -76,6 +79,7 @@ p{
 	color: #65696c;
 }
 
+/*iceland*/
 .grid-is {
 	display: grid;
 	border: 1px solid #c7c7c7;
@@ -100,6 +104,7 @@ p{
 	color: #02529c;
 }
 
+/*my own flag, inspired by princess peach from mario*/
 .box {
 	position: relative;
 /*	margin:  auto;*/
