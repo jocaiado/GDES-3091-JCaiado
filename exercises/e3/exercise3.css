@@ -1,0 +1,121 @@
+
+div {
+	display: block;
+	text-align: center;
+}
+
+.parameters {
+	margin-top: -10px;
+}
+
+.colour-text {
+	font-family: grenadine-mvb, Verdana, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: white;
+}
+
+@keyframes colour {
+	from {
+		color: white;
+	}
+	to {
+		color: #ff0059;
+	}
+}
+
+span {
+	display: inline-block;
+	border: #ff0059 5px solid;
+	width: 75px;
+	border-radius: 25%;
+	background: #ead7c5;
+	text-align: center;
+}
+
+.one:hover {
+	animation: colour 1s 1;
+	animation-fill-mode: forwards;
+}
+
+.two:hover {
+	animation: colour 1s 1;
+	animation-delay: 100ms;
+	animation-fill-mode: forwards;
+}
+
+.three:hover {
+	animation: colour 1s 1;
+	animation-fill-mode: forwards;
+	
+}
+
+.four:hover {
+	animation: colour 1s 1;
+	animation-fill-mode: forwards;
+	
+}
+
+.five:hover {
+	animation: colour 1s 1;
+	animation-fill-mode: forwards;
+}
+
+.six:hover {
+	animation: colour 1s, 1s 1;
+	animation-fill-mode: forwards;
+}
+
+.dupe-text {
+	font-family: 'Finger Paint', Brush Script MT, cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 48px;
+	text-shadow: 0px 0px;
+	text-transform: uppercase;
+}
+
+@keyframes dupe {
+	from {
+		text-shadow: 0px 0px;
+	}
+	to {
+		text-shadow: 0px 50px;
+	}
+}
+
+.dupe-text:hover {
+	animation: dupe 500ms 1 ease-out;
+	animation-fill-mode: forwards;
+}
+
+@font-face {
+	font-family: 'Sigmar';
+	src: url('fonts/SigmarOne.otf') 
+	format('opentype');
+}
+
+.stretch-text {
+	font-family: 'Sigmar', Helvetica, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 64px;
+	letter-spacing: -2px;
+}
+
+@keyframes smush {
+	from {
+		letter-spacing: -2px;
+	}
+	to {
+		letter-spacing: 50px;
+		font-weight: lighter;
+	}
+}
+
+.stretch-text:hover {
+	animation: smush 1.5s 1 ease-out;
+	animation-fill-mode: forwards;
+}
