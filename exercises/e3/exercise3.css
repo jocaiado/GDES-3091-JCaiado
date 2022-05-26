@@ -26,6 +26,7 @@ div {
 	}
 }
 
+/*using span to create block letter effect*/
 span {
 	display: inline-block;
 	border: #ff0059 5px solid;
@@ -35,6 +36,7 @@ span {
 	text-align: center;
 }
 
+/*defining individual hover animations*/
 .one:hover {
 	animation: colour 1s 1;
 	animation-fill-mode: forwards;
@@ -91,6 +93,7 @@ span {
 	animation-fill-mode: forwards;
 }
 
+/*self hosted font link using @font-face*/
 @font-face {
 	font-family: 'Sigmar';
 	src: url('fonts/SigmarOne.otf') 
