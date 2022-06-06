@@ -1,0 +1,70 @@
+
+/*body styling*/ 
+body {
+	margin: auto;
+	text-align: center;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+/*header styling*/
+h1 {
+	font-family: Times New Roman, times, serif;
+	font-size: 60px;
+	margin-bottom: -10px;
+}
+
+/*iFrame styling*/
+iframe {
+	display: block;
+	margin: auto;
+	width: 90vw;
+	height: 45vh;
+}
+
+/*general paragraph styling*/
+p {
+	margin: auto;
+	padding: 10px 0 50px 0;
+	text-align: center;
+	width: 90vw;
+}
+
+/*sub-text paragraph styling*/
+.sub-text {
+	padding-top: -10px;
+}
+
+/*media queries for different screen sizings, 
+working down from computer screen to mobile*/
+@media (max-width: 1199px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	iframe {
+		width: 90vw;
+		height: 45vh;
+	}
+}
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	iframe {
+		width: 95vw;
+		height: 50vh;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	iframe {
+		width: 100vw;
+		height: 60vh;
+	}
+}
