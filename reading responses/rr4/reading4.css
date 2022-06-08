@@ -1,0 +1,28 @@
+
+/*body styling*/ 
+body {
+	margin: auto;
+	text-align: center;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+/*header styling*/
+h1 {
+	font-family: Times New Roman, times, serif;
+	font-size: 48px;
+	margin-bottom: -10px;
+}
+
+/*general paragraph styling*/
+p {
+	margin: auto;
+	padding: 10px 0 50px 0;
+	text-align: center;
+	width: 50vw;
+}
+
+/*sub-text paragraph styling*/
+.sub-text {
+	margin-top: -20px;
+	font-size: 12px;
+}
