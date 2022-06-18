@@ -1,0 +1,118 @@
+
+:root {
+	--hWidth: 60vw;
+}
+
+body {
+	text-align: center;
+	overflow: hidden;
+}
+
+h2 {
+	margin: auto;
+	padding: 0.5em;
+	width: var(--hWidth);
+	font-family: pragmatica-extended, Helvetica, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: white;
+}
+
+h3 {
+	margin: auto;
+	padding: 0.125em;
+	width: var(--hWidth);
+	font-family: pragmatica-extended, Helvetica, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
+
+textarea {
+	text-align: center;
+	color: #436794;
+	margin: auto;
+	width: 50vw;
+	height: 10vh;
+	padding: 1.2em, 2em;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+	transition: 0.5s;
+	resize: none;
+	outline: none;
+}
+
+textarea:focus {
+	border: 1px solid #999999;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #436794;
+	opacity: 1;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.header1 {
+	margin: auto;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 0.625em;
+	color: white;
+	opacity: 0.5;
+}
+
+#main {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#errorText1 {
+	visibility: hidden;
+	margin-top: -0.125em;
+	font-family: Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 0.625em;
+	color: #999999;
+}
+
+.draggable { 
+	position: absolute;
+	padding:  20px;
+	box-shadow: 0px 0px 10px #05172C;
+	cursor: pointer;
+	overflow: auto;
+	overflow-wrap: break-word;
+	font-family: pragmatica-extended, Helvetica, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+	h2 h3 {
+	width: 80vw;
+	}
+
+	textarea {
+		width: 65vw;
+		height: 15vh;
+	}
+}
+
+@media (max-width: 767px) {
+	h2 h3 {
+	width: 90vw;
+	}
+
+	textarea {
+		width: 80vw;
+		height: 20vh;
+	}
+}
