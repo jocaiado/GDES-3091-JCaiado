@@ -1,0 +1,261 @@
+/* UI Style Guide CSS */
+::placeholder { /* Change placeholder text */
+  color: black;
+  opacity:  0.5;
+}
+
+/* UI Guide Spacing  */
+body { /* Add spacing to top of page */ 
+  margin-top: 50px;
+}
+
+/*text Elements*/
+.text-section {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  background-color: #ffde00;
+  color: #252525;
+}
+
+h1, h2, h3, h4, h5, .sub-heading, .text {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 8.75rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 5.25rem;
+}
+
+h2 {
+  font-size: 2.065rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: pt-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.063em;
+}
+
+.text {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+button {
+  margin-bottom: 25px;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+/*a interaction states for main h1 subtitle*/
+/*links to site used for ui inspiration*/
+.subtitle a {
+  color: #252525;
+  text-decoration: underline;
+}
+
+.subtitle a:hover {
+  color: #252525;
+  opacity: 0.75;
+}
+
+.subtitle a:active {
+  color: black;
+}
+
+.row {
+  margin-bottom: 30px;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 576px) {
+  .primary-colors {
+    margin-bottom:  40px;
+  }
+}
+
+/* Colours */
+.colors {
+  width:  100px;
+  float: left;
+}
+
+.colors div { 
+  width:  75px;
+  height:  45px;
+  margin-bottom: 20px;
+}
+
+/*primary*/
+.ui-yellow {
+  background-color: #ffde00;
+}
+
+.ui-red {
+  background-color: #D62323;
+}
+
+.ui-darkgrey {
+  background-color: #252525;
+}
+
+.ui-blue {
+  background-color: #1b49be;
+}
+
+.ui-green {
+  background-color: #298801;
+}
+.ui-white {
+  background-color: #ffffff;
+  border: 1.5px solid #dadada;
+}
+
+/*secondary*/
+.ui-twitterblue {
+  background-color: #0967a0;
+}
+.ui-linkdblue {
+  background-color: #0077b5;
+}
+
+.ui-hoverblue {
+  background-color: #0432A4;
+}
+
+/* Form Elements */
+.form-section {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background-color: #252525;
+  color: white;
+}
+
+/*buttons*/
+.ui-button {
+  background-color: #252525;
+  color: white;
+  border: none;
+  padding: 5px 2px;
+}
+
+.ui-button.active {
+  text-decoration: underline solid white 5px;
+}
+
+.ui-button.hover {
+  text-decoration: underline solid white 5px;
+}
+
+.ui-button.interactive {
+  transition: 0.25s ease;
+}
+
+.ui-button.interactive:hover {
+  text-decoration: underline solid white 5px;
+}
+
+/*text links*/
+.ui-a {
+  color: white;
+  text-decoration: underline;
+}
+
+.ui-a.active {
+ opacity: 0.75;
+}
+
+.ui-a.interactive {
+  transition: all .25s;
+}
+
+.ui-a.interactive:hover {
+  opacity: 0.75;
+}
+
+/*user inputs*/
+.ui-input {
+  border-radius: 0;
+  background: white;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  outline: none;
+  font-family: pt-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+}
+
+.ui-input.active {
+  border: 3px solid black;
+}
+
+.error-input {
+  margin-top: 20px;
+}
+
+.error {
+  background-color: white;
+  color: #D62323;
+}
+
+.error-message {
+  color: black;
+  margin-top: 5px;
+}
+
+/*short form input*/
+.ui-button.secondary {
+  background-color: white;
+  padding: 10px 15px;
+  color: black;
+}
+
+.ui-button.secondary:hover {
+  opacity: 0.75;
+  transition: 0.25s ease;
+}
+
+/* Place input and button next to one another for short form */
+.short-form input {
+  float: left;
+}
+
+.short-form button {
+  margin-top: -20px;
+  font-size: 1em !important;
+  text-align: center !important;
+}
