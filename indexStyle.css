@@ -1,0 +1,61 @@
+
+:root {
+	--viewport: 90vh;
+}
+
+* {
+	/*margin: auto;*/
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+a {
+	display: block;
+	background-color: transparent;
+}
+
+.nav {
+	display: inline-block;
+	float: right;
+	width: 15vw;
+	height: var(--viewport);
+	/*margin-top: 3vh;*/
+	margin-right: 1vw;
+}
+
+.accordion {
+	width: 100%;
+	border: 1px solid #dadada;
+  	outline: none;
+  	margin:  1.5vh 0 calc(var(--viewport) / 10) 0;
+  	background-color: #eee;
+  	color: #444;
+  	cursor: pointer;
+  	padding: 18px;
+  	text-align: right;
+  	font-size: 12px;
+  	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  	background-color: #ccc;
+}
+
+.panel {
+  	padding: 0 18px;
+  	background-color: white;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+}
+
+.main-container {
+	width: 85vw;
+	height: 85vh;
+	border: 1px solid #252525;
+	margin-left: 1vw;
+	margin-top: ;
+}

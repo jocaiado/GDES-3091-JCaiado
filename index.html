@@ -4,19 +4,50 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="exercise2.css">
+		<link rel="stylesheet" type="text/css" href="indexStyle.css">
 		<title>INDEX, Caiado</title>
 	</head>
 	
 	<body>
-		<h1>Index</h1>
+		<h1>Index: A Collection of Works</h1>
 
-		<p>Click through available links to view up-to-date exercises and project work created by Joseph Caiado for the GDES-3091: Interactive Media for the Web course.</p>
+		<div class="nav">
+			<button class="accordion">Exercises</button>
+			<div class="panel">
+				<a href="">Exercise 1</a>
+				<a href="">Exercise 2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+			</div>
+			<button class="accordion">Reading Responses</button>
+			<button class="accordion">Projects</button>
+			<button class="accordion">About</button>
+			<button class="accordion">Resources Used</button>
+		</div>
 
-		<h3>Exercises</h3>
+		<div class="main-container">
+			
+		</div>
 
-		<a href="https://jocaiado.github.io/exercises/e2/Exercise-2.html">Exercise 2</a> <br>
-		<a href="https://jocaiado.github.io/exercises/e3/Exercise-3.html">Exercise 3</a> <br>
-		<a href="https://jocaiado.github.io/exercises/e4/Exercise-4.html">Exercise 4</a> <br>
+		<script>
+
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+		
+		</script>
 	</body>
 </html>
