@@ -1,0 +1,118 @@
+
+body {
+    display: flex;
+    padding: 0;
+    margin-left: 3vw;
+    overflow: hidden;
+}
+
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*not working for some reason*/
+/*a:hover {
+    color: white;
+    text-decoration: none;
+}*/
+
+a:visited {
+	color: unset;
+	text-decoration: none;
+}
+
+a:active {
+	color: white;
+}
+
+h2, h3 {
+    margin-bottom: -1vh;
+}
+
+.main {
+    float: left;
+    width: 75vw;
+    height: 98vh;
+    border: 1px solid #DADADA;
+    overflow: scroll;
+}
+
+.content {
+    margin: 0 8vw;
+}
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+	height: 18vh;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+}
+
+.accordion {
+    position: relative;
+    width: 15vw;
+    font-family: chantal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.accordion p {
+    margin: -0.5px 0;
+}
+
+.accordion-item {
+    width: inherit;
+    margin: 12.5px 0;
+    background-color: #7d9e51;
+    border-bottom: 1px solid #92b267;
+    padding: 0.5em;
+    color: #34441F;
+    text-align: right;
+    transition: width .25s ease;
+}
+
+.accordion-item:hover, .accordion-item--default {
+    width: 18vw;
+}
+
+.accordion-item-content {
+    font-family: chantal, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ai-yellow {
+    background-color: #e5ee31;
+    color: #444706;
+    border-bottom: none;
+}
+
+.ai-blue {
+    background-color: #69bfe2;
+    color: #0c3240;
+    border-bottom: none;
+}
+
+.ai-pink {
+    background-color: #f767bf;
+    color: #490431;
+    border-bottom: none;
+}
+
+.ai-green {
+    background-color: #83bf12;
+    color: #304607;
+    border-bottom: none;
+}
+
+.ai-purple {
+    background-color: #7f3e82;
+    color: #321934;
+    border-bottom: none;
+}
