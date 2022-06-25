@@ -40,11 +40,23 @@ iframe {
     width: 75vw;
     height: 98vh;
     border: 1px solid #DADADA;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.main::-webkit-scrollbar{
+    width: 12.5px;
+}
+
+.main::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 3px #fedb3f;
+    background-color: #fff4e6;
 }
 
 .content {
     margin: 0 8vw;
+    direction: ltr;
 }
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
