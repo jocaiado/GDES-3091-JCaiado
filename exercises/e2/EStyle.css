@@ -1,0 +1,278 @@
+
+body {
+    display: flex;
+    padding: 0;
+    margin-left: 3vw;
+    overflow: hidden;
+}
+
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*not working for some reason*/
+/*a:hover {
+    color: white;
+    text-decoration: none;
+}*/
+
+a:visited {
+	color: unset;
+	text-decoration: none;
+}
+
+a:active {
+	color: white;
+}
+
+p {
+    margin-top: -5px;
+}
+
+.main {
+    float: left;
+    width: 75vw;
+    height: 98vh;
+    border: 1px solid #DADADA;
+    font-family: Garamond;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.main::-webkit-scrollbar{
+    width: 12.5px;
+}
+
+.main::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 3px #fedb3f;
+    background-color: #fff4e6;
+}
+
+.main h1 {
+    font-family: Helvetica;
+    margin-top: -2px;
+}
+
+.main h2, h3 {
+    font-family: Helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -1px;
+    margin-bottom: -1vh
+}
+
+.content {
+    margin: 0 8vw;
+    direction: ltr;
+}
+
+/*sweden*/
+.grid-se {
+    display: grid;
+    /*outline: 1px solid black;*/
+    width: 480px;
+    height: 300px;
+    grid-template: 40% 20% 40%/31.25% 12.5% 56.25%;
+}
+
+.se-yellow {
+    background: #fecc00;
+}
+
+.se-blue {
+    background: #006aa7;
+}
+
+.se-text {
+    color: #006aa7;
+}
+
+/*denmark*/
+.grid-dk {
+    display: grid;
+    width: 425px;
+    height: 350px;
+    grid-template: 6fr 2fr 6fr/6fr 2fr 9fr;
+}
+.dk-red {
+    background: #c9072a;
+}
+
+.dk-white {
+    background: #ffffff;
+}
+
+.dk-text {
+    color: #c9072a;
+}
+
+/*finland*/
+.grid-fi {
+    display: grid;
+    border: 1px solid #c7c7c7;
+    width: 450px;
+    height: 325px;
+    grid-template: 5fr 3fr 5fr/5fr 3fr 10fr;
+}
+
+.fi-white {
+    background: #ffffff;
+}
+
+.fi-blue {
+    background: #005d97;
+}
+
+.fi-text {
+    color: #65696c;
+}
+
+/*iceland*/
+.grid-is {
+    display: grid;
+    width: 500px;
+    height: 320px;
+    grid-template: 7fr 1fr 2fr 1fr 7fr/7fr 1fr 2fr 1fr 14fr;
+}
+
+.is-blue {
+    background: #02529c;
+}
+
+.is-white {
+    background: #ffffff;
+}
+
+.is-red {
+    background: #dc1e35;
+}
+
+.is-text {
+    color: #02529c;
+}
+
+/*my own flag, inspired by princess peach from mario*/
+.box {
+    position: relative;
+    width: 480px;
+    height: 300px;
+}
+
+.stripes {
+    display: grid;
+    position: absolute;
+/*  border: 1px solid black;*/
+    width: 480px;
+    height: 300px;
+    grid-template: repeat(5, 60px)/ 1fr;
+    z-index: -2;
+}
+
+.stripes-child {
+    background: #4077a8;
+}
+
+.stripes-child:nth-child(even) {
+    background: #ffffff;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 150px solid transparent;
+    border-left: 250px solid #ff94b9;
+    border-bottom: 150px solid transparent;
+    z-index:-1 ;
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 140px solid transparent;
+    border-left: 225px solid #dc4f75;
+    border-bottom: 140px solid transparent;
+    top: 10px;
+}
+
+.peach {
+    color: #dc4f75;
+}
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+	height: 18vh;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+}
+
+.accordion {
+    position: relative;
+    width: 15vw;
+    font-family: chantal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.accordion p {
+    margin: -0.5px 0;
+}
+
+.accordion-item {
+    width: inherit;
+    margin: 12.5px 0;
+    background-color: #7d9e51;
+    border-bottom: 1px solid #92b267;
+    padding: 0.5em;
+    color: #34441F;
+    text-align: right;
+    transition: width .25s ease;
+}
+
+.accordion-item:hover, .accordion-item--default {
+    width: 18vw;
+}
+
+.accordion-item-content {
+    font-family: chantal, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ai-yellow {
+    background-color: #e5ee31;
+    color: #444706;
+    border-bottom: none;
+}
+
+.ai-blue {
+    background-color: #69bfe2;
+    color: #0c3240;
+    border-bottom: none;
+}
+
+.ai-pink {
+    background-color: #f767bf;
+    color: #490431;
+    border-bottom: none;
+}
+
+.ai-green {
+    background-color: #83bf12;
+    color: #304607;
+    border-bottom: none;
+}
+
+.ai-purple {
+    background-color: #7f3e82;
+    color: #321934;
+    border-bottom: none;
+}
