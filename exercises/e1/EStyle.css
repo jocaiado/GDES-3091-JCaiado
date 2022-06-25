@@ -34,14 +34,13 @@ a:active {
     font-family: Garamond;
     overflow-y: scroll;
     overflow-x: hidden;
-    direction: rtl;
 }
 
-.main::-webkit-scrollbar{
+::-webkit-scrollbar{
     width: 12.5px;
 }
 
-.main::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
     -webkit-box-shadow: inset 0 0 3px #fedb3f;
     background-color: #fff4e6;
 }
@@ -57,7 +56,6 @@ a:active {
 
 .content {
     margin: 0 8vw;
-    direction: ltr;
 }
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
