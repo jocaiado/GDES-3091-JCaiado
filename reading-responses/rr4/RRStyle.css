@@ -30,6 +30,11 @@ h2, h3 {
     margin-bottom: -1vh;
 }
 
+iframe {
+    width: 57vw;
+    height: 25vh;
+}
+
 .main {
     float: left;
     width: 75vw;
