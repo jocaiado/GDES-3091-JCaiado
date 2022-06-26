@@ -15,18 +15,29 @@ body {
 }
 
 h1 {
-    font-family:times new roman, times, serif;
+    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-transform: uppercase;
     font-size: 72px;
     margin-bottom: 10px;
 }
 
 p {
-    font-family: helvetica, sans-serif;
-    font-style: normal;
+    font-family: pt-serif, serif;
+    font-weight: 400;
+    font-style: normal;;
     font-size: 16px;
     margin-bottom: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 12.5px;
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 3px #fedb3f;
+    background-color: #fff4e6;
 }
 
 .box {
@@ -34,7 +45,7 @@ p {
     height: 300px; 
     display: inline-block; 
     position: relative;
-    margin-right: 50px;
+    margin-right: 25px;
     margin-bottom: 50px;
 }
 
@@ -74,6 +85,7 @@ p {
     border-right: var(--border);
     border-top: var(--border);
     border-radius: 0 100% 0 0;
+    left: -1px;
 }
 
 .letter-b:after {
@@ -321,11 +333,12 @@ p {
 .letter-n:before {
     content: "";
     position: absolute;
-    width: var(--width);
+    width: calc(var(--width) + 1px);
     height: var(--height);
     border-top: var(--border);
     border-right: var(--border);
     border-radius: 0 100% 0 0;
+    left: -1px;
 }
 
 .letter-o {
@@ -391,6 +404,7 @@ p {
     border-right: var(--border);
     border-top: var(--border);
     border-radius: 0 100% 0 0;
+    left: -1px;
 }
 
 .letter-r:after {
