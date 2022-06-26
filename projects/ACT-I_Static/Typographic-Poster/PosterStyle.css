@@ -154,7 +154,7 @@ a:active {
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
 	margin: auto;
-	height: 7em;
+	height: 15vh;
 }
 
 .accordion-item-content,
