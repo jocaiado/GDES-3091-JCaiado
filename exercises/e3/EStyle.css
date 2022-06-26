@@ -200,7 +200,7 @@ span {
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
-	height: 18vh;
+	height: 20vh;
 }
 
 .accordion-item-content,
