@@ -20,7 +20,6 @@ h2, h3 {
     font-style: normal;
     overflow-y: scroll;
     overflow-x: hidden;
-    direction: rtl;
 }
 
 .main::-webkit-scrollbar{
@@ -68,7 +67,6 @@ h2, h3 {
 
 .content {
     margin: 0 8vw;
-    direction: ltr;
 }
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
