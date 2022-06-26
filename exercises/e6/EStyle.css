@@ -11,19 +11,22 @@ a:link {
 	text-decoration: none;
 }
 
-/*not working for some reason*/
-/*a:hover {
-    color: white;
-    text-decoration: none;
-}*/
-
 a:visited {
 	color: unset;
 	text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 a:active {
 	color: white;
+}
+
+a.current {
+    color: white;
 }
 
 iframe {

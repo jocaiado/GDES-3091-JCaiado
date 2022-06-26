@@ -11,19 +11,22 @@ a:link {
 	text-decoration: none;
 }
 
-/*not working for some reason*/
-/*a:hover {
-    color: white;
-    text-decoration: none;
-}*/
-
 a:visited {
 	color: unset;
 	text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 a:active {
 	color: white;
+}
+
+a.current {
+    color: white;
 }
 
 img {
@@ -36,7 +39,9 @@ img {
     width: 75vw;
     height: 98vh;
     border: 1px solid #DADADA;
-    font-family: Garamond;
+    font-family: pt-serif, serif;
+    font-weight: 400;
+    font-style: normal;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -51,12 +56,16 @@ img {
 }
 
 .main h1 {
-    font-family: Helvetica;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .main h2, h3 {
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .content {

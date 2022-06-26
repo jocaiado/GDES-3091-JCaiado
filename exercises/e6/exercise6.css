@@ -19,14 +19,6 @@ body { /* Add spacing to top of page */
   background-color: #fff4e6;
 }
 
-.container {
-  direction: rtl;
-}
-
-.row {
-  direction: ltr;
-}
-
 /*text Elements*/
 .text-section {
   padding-top: 100px;

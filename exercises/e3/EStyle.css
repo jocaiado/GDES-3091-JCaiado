@@ -11,19 +11,22 @@ a:link {
 	text-decoration: none;
 }
 
-/*not working for some reason*/
-/*a:hover {
-    color: white;
-    text-decoration: none;
-}*/
-
 a:visited {
 	color: unset;
 	text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 a:active {
 	color: white;
+}
+
+a.current {
+    color: white;
 }
 
 .main {
@@ -31,7 +34,9 @@ a:active {
     width: 75vw;
     height: 98vh;
     border: 1px solid #DADADA;
-    font-family: Garamond;
+    font-family: pt-serif, serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: -5px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -47,13 +52,17 @@ a:active {
 }
 
 .main h1 {
-    font-family: Helvetica;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
     margin-top: 1vh;
 }
 
 .main h2, h3 {
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
     margin-top: -1px;
     margin-bottom: -1vh;
@@ -63,10 +72,8 @@ a:active {
     margin: 2vh 8vw;
 }
 
-
 .container {
     display: block;
-    text-align: center;
 }
 
 .parameters {
@@ -80,7 +87,7 @@ a:active {
     font-size: 48px;
     text-transform: uppercase;
     color: white;
-    margin: 5vh 0;
+    margin: 7.5vh 0;
 }
 
 @keyframes colour {
@@ -143,7 +150,7 @@ span {
     font-size: 48px;
     text-shadow: 0px 0px;
     text-transform: uppercase;
-    margin: 5vh 0;
+    margin: 7.5vh 0;
 }
 
 @keyframes dupe {
@@ -173,7 +180,7 @@ span {
     font-style: normal;
     font-size: 64px;
     letter-spacing: -2px;
-    margin: 5vh 0;
+    margin: 7.5vh 0;
 }
 
 @keyframes smush {
