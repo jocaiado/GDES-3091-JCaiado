@@ -1,0 +1,816 @@
+
+:root {
+    --border: 10px solid black;
+    --height: 280px;
+    --width: 180px;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    margin: 50px 100px;
+}
+
+h1 {
+    font-family:times new roman, times, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.box {
+	width: 200px; 
+    height: 300px; 
+    display: inline-block; 
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.letter-a {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border); 
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-a:before {
+    content: "";
+    position: absolute;
+    width: 150px; 
+    height: 100px; 
+    border-bottom: var(--border);
+    left: -5px;
+}
+
+.letter-b {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border);
+    border-bottom: var(--border);
+}
+
+.letter-b:before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 100px; 
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-b:after {
+    content: "";
+    position: absolute;
+    width: 60px; 
+    height: 160px;
+    top:110px;
+    left: 110px;
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-c {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-top: var(--border);
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-d {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-e {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-top: var(--border);
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-e:before {
+    content: "";
+    position: absolute;
+    width: 100px; 
+    height:100px; 
+    left: 35px;
+    border-bottom: var(--border); 
+}
+
+.letter-f {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height); 
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-f:before {
+    content: "";
+    position: absolute;
+    width: 100px; 
+    height:100px; 
+    left: 35px;
+    border-bottom: var(--border); 
+}
+
+.letter-g {
+    position: absolute;
+    width: var(--width); 
+    height: 285px;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-radius: 100% 0 0 0; 
+}
+
+.letter-g:before {
+    content: "";
+    position: absolute;
+    width: var(--width); 
+    height: 100px;
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-radius: 0 0 100% 0;
+    top: 180px;
+    left: -10px;
+}
+
+.letter-g:after {
+    content: "";
+    position: absolute;
+    border-right: var(--border);
+    border-top: var(--border);
+    width: 75px; 
+    height: 100px;
+    left: 100px;
+    top: 180px;
+}
+
+.letter-h {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-h:before {
+    content: "";
+    position: absolute;
+    border-left: var(--border);
+    height: 180px;
+    top: 100px;
+}
+
+.letter-h:after {
+    content: "";
+    position: absolute;
+    border-bottom: var(--border);
+    width: 160px;
+    top: 140px;
+}
+
+.letter-i {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height); 
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.letter-i:before {
+    content: "";
+    position: absolute;
+    height: 285px;
+    width: 90px;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+    left: 50px;
+    top: -10px;
+}
+
+.letter-j {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0; 
+}
+
+.letter-k {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height); 
+    border-left: var(--border);
+}
+
+.letter-k:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-radius: 0 0 100% 0;
+    left: -2px;
+}
+
+.letter-k:after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0 ;
+    top: 100px;
+    left: -2px;
+}
+
+.letter-l {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-bottom: var(--border);
+    border-radius: 20% 0 0 0;
+    left: 10px;
+}
+
+.letter-l:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: var(--height);
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-m {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+.letter-m:before {
+    content: "";
+    position: absolute;
+    width: 85px; 
+    height: 100px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0;
+    left: -2px;
+}
+
+.letter-m:after {
+    content: "";
+    position: absolute;
+    width: 85px; 
+    height: 100px;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-radius: 100% 0 0 0;
+    left: 85px;
+}
+
+.letter-n {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+.letter-n:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-o {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-p {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border);
+}
+
+.letter-p:before {
+    content: "";
+    position: absolute;
+    width: 160px; 
+    height: 100px; 
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+    left: -2px;
+}
+
+.letter-q {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.letter-q:before {
+    content: "";
+    position: absolute;
+    width: 90px; 
+    height: 100px;
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 0 100%;
+    left: 90px;
+    top: 180px;
+}
+
+.letter-r {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-left: var(--border);
+}
+
+.letter-r:before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 100px; 
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-r:after {
+    content: "";
+    position: absolute;
+    width: 60px; 
+    height: 160px;
+    top:110px;
+    left: 110px;
+    border-right: var(--border);
+    border-top: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-s {
+    position: absolute;
+    width: var(--width);
+    height: 170px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    top: 110px;
+}
+
+.letter-s:before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-radius: 100% 0 0 0;
+    top: -120px;
+}
+
+.letter-t {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height); 
+    border-top: var(--border);
+}
+
+.letter-t:before {
+    content: "";
+    position: absolute;
+    height: var(--height);
+    width: 90px;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+    left: 30px;
+    top: -10px;
+}
+
+.letter-u {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-radius: 0 0 0 100% ;
+}
+
+.letter-v {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-v:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-right: var(--border);
+}
+
+.letter-w {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-radius: 0 0 0 100% ;
+}
+
+.letter-w:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 140px;
+    border-left: var(--border);
+    top: 105px;
+    left: 85px;
+}
+
+.letter-x {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-bottom: var(--border);
+    border-right: var(--border);
+    border-radius: 0 0 100% 0;
+}
+
+.letter-x:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0;
+}
+
+.letter-y {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-right: var(--border);
+}
+
+.letter-y:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 100px;
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 0 100%;
+}
+
+.letter-z {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-bottom: var(--border);
+    border-top: var(--border);
+}
+
+.letter-z:before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 285px;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+    top: -10px;
+}
+
+.letter-z:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border-bottom: var(--border);
+    top: 100px;
+    left: 5px;
+}
+
+.one {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-bottom: var(--border);
+}
+
+.one:before {
+    content: "";
+    position: absolute;
+    height: var(--height);
+    border-right: var(--border);
+    left: 120px;
+}
+
+.one:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+}
+
+.two {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-bottom: var(--border);
+    border-top: var(--border);
+}
+
+.two:before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 285px;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    top: -5px;
+}
+
+.three {
+    position: absolute;
+    width: var(--width); 
+    height: 100px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0; 
+}
+
+.three:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 180px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    top: 100px;
+}
+
+.four {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-right: var(--border);
+}
+
+.four:before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    border-top: var(--border);
+    top: 100px;
+    left: 10px;
+}
+
+.four:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    left: 10px;
+}
+
+.five {
+    position: absolute;
+    width: 100px;
+    height: var(--height);
+    border-top: var(--border);
+    left: 60px;
+}
+
+.five:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 180px;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    left: -60px;
+    top: 90px;
+}
+
+.five:after {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 60px;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+    left: -60px;
+    top: -10px;
+}
+
+.six {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.six:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 120px;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+    left: -10px;
+    top: 160px;
+}
+
+.six:after {
+    content: "";
+    position: absolute;
+    width: 165px;
+    border-top: var(--border);
+    top: 160px;
+    left: 10px;
+}
+
+.seven {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border-top: var(--border);
+    border-left: var(--border);
+    border-radius: 100% 0 0 0; 
+}
+
+.seven:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    border-top: var(--border);
+    top: -10px;
+}
+
+.seven:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    border-top: var(--border);
+    top: 90px;
+}
+
+.eight {
+    position: absolute;
+    width: 185px;
+    height: var(--height);
+    border-top: var(--border);
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.eight:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--height) + 10px);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-radius: 0 100% 0 0;
+    top: -10px;
+}
+
+.eight:after {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    border-top: var(--border);
+    top: -10px;
+}
+
+.nine {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 100% 0;
+}
+
+.nine:before {
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 120px;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.nine:after {
+    content: "";
+    position: absolute;
+    width: 165px;
+    border-top: var(--border);
+    top: 120px;
+    left: 5px;
+}
+
+.zero {
+    position: absolute;
+    width: var(--width); 
+    height: var(--height);
+    border: var(--border);
+    border-radius: 100% 0 0 0;
+}
+
+.zero:before {
+    content: "";
+    position: absolute;
+    width: 120px; 
+    height: 205px;
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-radius: 0 0 0 100%;
+    top: 75px;
+    left: 50px;
+}
