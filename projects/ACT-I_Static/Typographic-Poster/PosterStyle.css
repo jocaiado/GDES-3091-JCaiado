@@ -142,7 +142,7 @@ a:active {
 }
 
 .player-text {
-	margin: auto;
+	margin: 0 1vw;
 	font-family: 'Press Start 2P', cursive;
 	font-size: 24px;
 	color: #1f2417;
@@ -153,7 +153,6 @@ a:active {
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
-	margin: auto;
 	height: 15vh;
 }
 
