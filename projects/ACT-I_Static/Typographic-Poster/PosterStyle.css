@@ -18,6 +18,8 @@ h1 {
 	margin-bottom: 0.5em;
 }
 
+
+
 a:link {
 	color: #34441F;
 	text-decoration: none;
@@ -36,11 +38,14 @@ a:active {
 	color: #c7e59f;
 }
 
+.outer-container {
+	margin: 0 10vw;
+}
+
 .contain-grids {
-	margin: auto;
 	display: inline-flex;
-	margin-bottom: 2px;
-	margin-right: 8px;
+	margin-bottom: 1vh;
+	margin-right: 1vw;
 }
 
 .grid {
@@ -59,7 +64,6 @@ a:active {
 	height: 50px;
 	grid-template: repeat(5, 1fr)/repeat(5, 1fr);
 	margin-right: 2px;
-	margin-left: 6.5em;
 }
 
 .grid-colour {
