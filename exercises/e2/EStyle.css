@@ -67,7 +67,7 @@ p {
     font-style: normal;
     text-transform: uppercase;
     margin-top: -1px;
-    margin-bottom: -1vh
+    margin-bottom: 1vh
 }
 
 .content {
@@ -169,7 +169,6 @@ p {
 .stripes {
     display: grid;
     position: absolute;
-/*  border: 1px solid black;*/
     width: 480px;
     height: 300px;
     grid-template: repeat(5, 60px)/ 1fr;
@@ -281,4 +280,192 @@ p {
     background-color: #7f3e82;
     color: #321934;
     border-bottom: none;
+}
+
+@media (max-width: 991px) {
+        body {
+        overflow: scroll;
+        overflow-wrap: break-word;
+        margin-left: unset;
+    }
+
+    .main {
+        width: 65vw;
+    }
+
+    .main h1 {
+        font-size: 48px;
+    }
+
+    .main h2, h3 {
+        margin-top: 2vh;
+    }
+
+    .grid-se {
+        width: 45vw;
+        height: 28.125vh;
+    }
+
+    .grid-dk {
+        width: 45vw;
+        height: 37.059vh;
+    }
+
+    .grid-fi {
+        width: 45vw;
+        height: 32.5vh;
+    }
+
+    .grid-is {
+        width: 45vw;
+        height: 28.8vh;
+    }
+
+    .box {
+        width: 45vw;
+        height: 28.125vh;
+    }
+
+    .stripes {
+        width: 45vw;
+        height: 28.125vh;
+        grid-template: repeat(5, 5.625vh)/ 1fr;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 90px solid transparent;
+        border-left: 125px solid #ff94b9;
+        border-bottom: 90px solid transparent;
+        z-index:-1 ;
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 80px solid transparent;
+        border-left: 110px solid #dc4f75;
+        border-bottom: 80px solid transparent;
+        top: 10px;
+    }
+
+    .peach {
+        margin-top: 10vh;
+    }
+
+    .accordion {
+        width: 25vw;
+    }
+
+    .accordion h1 {
+        font-size: 18px;
+    }
+
+    .accordion p {
+        font-size: 12px;
+    }
+
+    .accordion:hover .accordion-item:hover .accordion-item-content,
+    .accordion .accordion-item--default .accordion-item-content {
+        height: 20vh;
+    }
+
+    .accordion-item:hover, .accordion-item--default {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow: scroll;
+        overflow-wrap: break-word;
+        margin-left: unset;
+    }
+
+    .main {
+        width: 65vw;
+    }
+
+    .main h1 {
+        font-size: 48px;
+    }
+
+    .grid-se {
+        width: 45vw;
+        height: 28.125vh;
+    }
+
+    .grid-dk {
+        width: 45vw;
+        height: 37.059vh;
+    }
+
+    .grid-fi {
+        width: 45vw;
+        height: 32.5vh;
+    }
+
+    .grid-is {
+        width: 45vw;
+        height: 28.8vh;
+    }
+
+    .box {
+        width: 45vw;
+        height: 28.125vh;
+    }
+
+    .stripes {
+        width: 45vw;
+        height: 28.125vh;
+        grid-template: repeat(5, 5.625vh)/ 1fr;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 90px solid transparent;
+        border-left: 125px solid #ff94b9;
+        border-bottom: 90px solid transparent;
+        z-index:-1 ;
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 80px solid transparent;
+        border-left: 110px solid #dc4f75;
+        border-bottom: 80px solid transparent;
+        top: 10px;
+    }
+
+    .peach {
+        margin-top: 10vh;
+    }
+
+    .accordion {
+        width: 25vw;
+    }
+
+    .accordion h1 {
+        font-size: 18px;
+    }
+
+    .accordion p {
+        font-size: 12px;
+    }
+
+    .accordion:hover .accordion-item:hover .accordion-item-content,
+    .accordion .accordion-item--default .accordion-item-content {
+        height: 20vh;
+    }
+
+    .accordion-item:hover, .accordion-item--default {
+        width: 30vw;
+    }
 }
