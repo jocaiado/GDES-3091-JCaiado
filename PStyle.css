@@ -6,8 +6,12 @@ body {
     overflow: hidden;
 }
 
-h2, h3 {
-    margin-bottom: -1vh;
+figure {
+   margin: 0;
+}
+
+img {
+    margin: 10px 10px 10px 0;
 }
 
 .main {
@@ -35,9 +39,9 @@ h2, h3 {
     font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 72px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    background-color: #7f3e82;
+    color: #321934;
 }
 
 .main h2, h3 {
@@ -47,34 +51,30 @@ h2, h3 {
 }
 
 .main a:link {
-    color: #e37de8;
+    color: #f767bf;
     text-decoration: none;
 }
 
 .main a:visited {
-    color: #cb98cd;
+    color: #fbb6e1;
     text-decoration: none;
 }
 
 .main a:hover {
-    color: #aa00b3;
+    color: #da0b8b;
     text-decoration: none;
 }
 
 .main a:active {
-    color: #aa00b3;
-}
-
-.main p{
-	font-size: 12px;
-	margin-top: -1.5vh;
-}
-.sub-text {
-	margin-bottom: 100px;
+    color: #da0b8b;
 }
 
 .content {
     margin: 0 8vw;
+}
+
+.sub-text {
+    margin-top: -2vh;
 }
 
 .accordion:hover .accordion-item:hover .accordion-item-content,
