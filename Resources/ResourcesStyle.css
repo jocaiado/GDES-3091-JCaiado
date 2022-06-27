@@ -6,39 +6,132 @@ body {
     overflow: hidden;
 }
 
-a:link {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:visited {
-	color: unset;
-	text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-a:active {
-	color: white;
-}
-
-a.current {
-    color: white;
-}
-
-h2, h3 {
-    margin-bottom: -1vh;
-}
-
 .main {
     float: left;
     width: 75vw;
     height: 98vh;
     border: 1px solid #DADADA;
     overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 12.5px;
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 3px #fedb3f;
+    background-color: #fff4e6;
+}
+
+.main h1 {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: #83bf12;
+    color: #304607;
+}
+
+.main h2, h3 {
+    margin-bottom: -1vh;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.exercises a:link {
+    color: #e5ee31;
+    text-decoration: none;
+}
+
+.exercises a:visited {
+    color: #eaf25a;
+    text-decoration: none;
+}
+
+.exercises a:hover {
+    color: #b4bd0f;
+    text-decoration: none;
+}
+
+.exercises a:active {
+    color: #b4bd0f;
+}
+
+.readings a:link {
+    color: #33c5ff;
+    text-decoration: none;
+}
+
+.readings a:visited {
+    color: #b3ebff;
+    text-decoration: none;
+}
+
+.readings a:hover {
+    color: #2498c2;
+    text-decoration: none;
+}
+
+.readings a:active {
+    color: #2498c2;
+}
+
+.projects a:link {
+    color: #f767bf;
+    text-decoration: none;
+}
+
+.projects a:visited {
+    color: #fbb6e1;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    color: #da0b8b;
+    text-decoration: none;
+}
+
+.projects a:active {
+    color: #da0b8b;
+}
+
+.home a:link {
+    color: #e37de8;
+    text-decoration: none;
+}
+
+.home a:visited {
+    color: #cb98cd;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: #aa00b3;
+    text-decoration: none;
+}
+
+.home a:active {
+    color: #aa00b3;
+}
+
+.resources a:link {
+    color: #99e015;
+    text-decoration: none;
+}
+
+.resources a:visited {
+    color: #c9f37c;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    color: #608c0d;
+    text-decoration: none;
+}
+
+.resources a:active {
+    color: #608c0d;
 }
 
 .content {
@@ -63,6 +156,29 @@ h2, h3 {
     font-family: chantal, sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+.accordion a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.accordion a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+.accordion a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.accordion a:active {
+    color: white;
+}
+
+.accordion a.current {
+    color: white;
 }
 
 .accordion p {
